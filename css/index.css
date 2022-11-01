@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+JP&display=swap');
+
+@keyframes anim {
+  0%  {width: 600px;}
+  70%  {width: 690px;}
+  85%  {width: 600px;}
+  90%  {width: 610px;}
+  95%  {width: 600px;}
+  100%  {width: 600px;}
+}
+
+@keyframes anim2 {
+  0%  {width: 620px;}
+  70%  {width: 700px;}
+  85%  {width: 620px;}
+  90%  {width: 635px;}
+  95%  {width: 610px;}
+  100%  {width: 620px;}
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, p, button {
+  font-family: 'Comfortaa', cursive;
+}
+
+h1.jp, p.jp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  float: center;
+  line-height: 5px;
+}
+
+button {
+  display: inline;
+  margin: 3px;
+  transform: translate(0, -2px);
+  padding: 2px;
+  border-radius: 20%;
+  border-style: solid;
+}
+
+#wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  caret-color: transparent;
+  overflow: visible;
+  /* background-color: #999; */
+}
+
+#circle {
+  width: 600px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+
+  animation-name: anim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#circle2 {
+  width: 610px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -2;
+
+  animation-name: anim2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#icon {
+  width: 20%;
+}

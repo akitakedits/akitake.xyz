@@ -1,0 +1,45 @@
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+a {
+  color: #ff6262;
+}
+
+a:hover {
+  color: #ff9595;
+}
+
+a:active {
+  color: #ff6262;
+}
+
+button {
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+button:hover {
+  background-color: #ffd2d2;
+}
+
+button:active {
+  background-color: #ff6262;
+}
+
+#circle {
+  background-color: #222;
+  filter: drop-shadow(0 0 400px #ff3333);
+}
+
+#circle2 {
+  background-color: #fff;
+  filter: drop-shadow(0 0 400px #ff3333);
+}
+
+#KofiLogo{
+  content:url("https://storage.ko-fi.com/cdn/cup-border.png");
+  filter: invert(1);
+}
