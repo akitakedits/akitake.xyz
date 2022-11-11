@@ -38,7 +38,3 @@ button:active {
   background-color: #fff;
   filter: drop-shadow(0 0 400px #ff8cec);
 }
-
-#KofiLogo{
-  content:url("https://storage.ko-fi.com/cdn/cup-border.png");
-}

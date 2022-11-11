@@ -40,6 +40,5 @@ button:active {
 }
 
 #KofiLogo{
-  content:url("https://storage.ko-fi.com/cdn/cup-border.png");
   filter: invert(1);
 }
