@@ -1,2 +1,1 @@
-# akitake.xyz
-My personal website's code -  akitake.xyz
+# My personal website's files - [akitake.xyz](https://akitake.xyz)
