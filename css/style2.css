@@ -1,18 +1,18 @@
 body {
-  background-color: #7ac5ff;
-  color: #000;
+  background-color: #111;
+  color: #fff;
 }
 
 a {
-  color: #ad69be;
+  color: hwb(199 38% 0%);
 }
 
 a:hover {
-  color: #ce7ce2;
+  color: hwb(199 58% 0%);
 }
 
 a:active {
-  color: #ad69be;
+  color: hwb(199 38% 0%);
 }
 
 button {
@@ -22,19 +22,19 @@ button {
 }
 
 button:hover {
-  background-color: #f8ddff;
+  background-color: hwb(199 82% 0%);
 }
 
 button:active {
-  background-color: #c78cff;
+  background-color: hwb(199 38% 0%);
 }
 
-#circle {
-  background-color: #e8b5ff;
-  filter: drop-shadow(0 0 400px #ff8cec);
+#box {
+  background-color: #222;
+  filter: drop-shadow(0 0 400px hwb(199 20% 0%));
+  border-color: hwb(199 0% 80%);
 }
 
-#circle2 {
-  background-color: #fff;
-  filter: drop-shadow(0 0 400px #ff8cec);
+#KofiLogo {
+  filter: invert(1);
 }
