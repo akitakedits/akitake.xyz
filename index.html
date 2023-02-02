@@ -15,20 +15,131 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link id="style1" rel="stylesheet" type="text/css" href="css/style1.css">
-  <link id="style2" rel="stylesheet" type="text/css" href="css/style2.css" disabled="disabled">
-
   <link id="default" rel="stylesheet" type="text/css" href="css/index.css">
   
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   
   <meta name="theme-color" content="#fafafa">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+JP&display=swap');
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    body {
+      background-color: #110;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: hwb(260 38% 0%);
+    }
+
+    a:hover {
+      color: hwb(289 58% 0%);
+    }
+
+    a:active {
+      color: hwb(277 38% 0%);
+    }
+
+    h1, p, button {
+      font-family: 'Comfortaa', cursive;
+    }
+
+    h1.jp, p.jp {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    ol, ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul > li {
+      float: center;
+      line-height: 10px;
+    }
+
+    button {
+      display: inline;
+      margin: 3px;
+      transform: translate(0, -2px);
+      padding: 2px;
+      border-radius: 20%;
+      border-style: solid;
+      border-color: #fff;
+      background-color: #fff;
+      color: #000;
+    }
+
+    button:hover {
+      background-color: hwb(289 82% 0%);
+    }
+
+    button:active {
+      background-color: hwb(289 38% 0%);
+    }
+
+    #wrapper {
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      caret-color: transparent;
+      overflow: visible;
+    }
+
+    #box {
+      height: 110%;
+      aspect-ratio: 1 / 1;
+      
+      border-radius: 45%;
+      border-width: 4px;
+      border-style: solid;
+
+      position: absolute;
+      animation: rotation 20s infinite linear;
+
+      z-index: -1;
+
+      background-color: rgb(32, 32, 32);
+      filter: drop-shadow(-1 0 400px rgb(221, 51, 255));
+      border-color: rgb(42, 0, 51);
+    }
+
+    #icon {
+      width: 100px;
+    }
+
+    #KofiLogo {
+      filter: invert(1);
+    }
+  </style>
 </head>
 
 <body>
   <div id="wrapper">
     <span id="box"></span>
-    <input id="icon" type="image" src="icon.png" onClick="switch_css();" />
+    <img id="icon" src="icon.png" />
     
     <h1 style="margin-bottom: 0">Akitake</h1>
     <p class="jp" style="margin-top: 0;">「秋剛」</p>
