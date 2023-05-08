@@ -1,1 +1,1 @@
-# My personal website's files - [akitake.xyz](https://akitake.xyz)
+# My static website's files - [akitake.xyz](https://akitake.xyz)
