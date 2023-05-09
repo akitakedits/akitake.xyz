@@ -34,7 +34,3 @@ button:active {
   filter: drop-shadow(0 0 400px hwb(199 20% 0%));
   border-color: hwb(199 0% 80%);
 }
-
-#KofiLogo {
-  filter: invert(1);
-}
