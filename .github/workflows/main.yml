@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:    
+    branches: [main]
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🚚 Checkout
+        uses: actions/checkout@v3
+        
+      - name: 📂 Upload
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT }}
+          ssh_private_key: ${{ secrets.SFTP_PKEY }}
+          local_path: ./
+          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
