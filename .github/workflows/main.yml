@@ -29,5 +29,5 @@ jobs:
           server: ${{ secrets.SFTP_SERVER }}
           port: ${{ secrets.SFTP_PORT }}
           ssh_private_key: ${{ secrets.SFTP_PKEY }}
-          local_path: ./site/
+          local_path: ./site/*
           remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
