@@ -8,11 +8,20 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v3
-          
+
+      - name: 🪣 Prepare
+        uses: garygrossgarten/github-action-ssh@0.7.0
+        with:
+          command: ${{ secrets.CMD_PREPARE }}
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          port: ${{ secrets.SFTP_PORT }}
+          privateKey: ${{ secrets.SFTP_PKEY }}
+
       - name: 📂 Upload
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
