@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "akitake.xyz",
+  "name": "akitake.xyz",
   "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
+    "src": "icon.webp",
+    "type": "image/webp",
+    "sizes": "512x512"
   }],
   "start_url": "/",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "background_color": "#db9dff",
+  "theme_color": "#db9dff"
 }

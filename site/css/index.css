@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree&family=Noto+Sans+JP&display=swap");
 
 @keyframes rotation {
   from {
@@ -9,20 +9,48 @@
   }
 }
 
+body {
+  background: linear-gradient(25deg, #9de8ff 15%, #db9dff 85%);
+  color: #fff;
+}
+
+h1,
+p,
+button {
+  font-family: "Figtree";
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+strong {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
 a {
+  color: hwb(290 82% 0%);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-h1, p, button {
-  font-family: 'Comfortaa', cursive;
+a:hover {
+  color: hwb(290 51% 0%);
 }
 
-h1.jp, p.jp {
-  font-family: 'Noto Sans JP', sans-serif;
+a:active {
+  color: hwb(290 45% 0%);
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,6 +62,9 @@ ul > li {
 }
 
 button {
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
   display: inline;
   margin: 3px;
   transform: translate(0, -2px);
@@ -42,10 +73,18 @@ button {
   border-style: solid;
 }
 
+button:hover {
+  background-color: hwb(290 82% 0%);
+}
+
+button:active {
+  background-color: hwb(290 52% 0%);
+}
+
 #wrapper {
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -54,7 +93,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-   
+
   caret-color: transparent;
   overflow: visible;
 }
@@ -62,7 +101,11 @@ button {
 #box {
   height: 110%;
   aspect-ratio: 1 / 1;
-  
+
+  background-color: #242424;
+  filter: drop-shadow(0 0 5px hwb(60 83% 0%));
+  border-color: hwb(291 15% 77%);
+
   border-radius: 45%;
   border-width: 4px;
   border-style: solid;
@@ -74,5 +117,6 @@ button {
 }
 
 #icon {
-  width: 100px;
+  width: 150px;
+  border-radius: 50%;
 }
