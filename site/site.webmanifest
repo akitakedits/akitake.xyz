@@ -6,9 +6,9 @@
   "background_color": "#fff",
   "theme_color": "#db9dff",
   "icons": [
-    {"src": "icon512.webp", "sizes": "512x512", "type": "image/webp" },
-    {"src": "icon256.webp", "sizes": "256x256", "type": "image/webp" },
-    {"src": "icon128.webp", "sizes": "128x128", "type": "image/webp" },
-    {"src": "icon96.webp", "sizes": "96x96", "type": "image/webp" }
+    {"src": "assets/icon/icon512.webp", "sizes": "512x512", "type": "image/webp" },
+    {"src": "assets/icon/icon256.webp", "sizes": "256x256", "type": "image/webp" },
+    {"src": "assets/icon/icon128.webp", "sizes": "128x128", "type": "image/webp" },
+    {"src": "assets/icon/icon96.webp", "sizes": "96x96", "type": "image/webp" }
   ]
 }
